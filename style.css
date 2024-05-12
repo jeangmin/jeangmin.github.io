@@ -1,47 +1,58 @@
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
     display: flex;
     margin: 0;
     min-height: 100vh;
+    background: url('your-background-image.jpg') no-repeat center center fixed; 
+    background-size: cover;
 }
 
 .sidebar {
-    width: 200px;
+    width: 250px;
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
-    background: #333;
-    color: #fff;
+    background: #2c3e50;
+    color: #ffffff;
     padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
-.sidebar ul {
+.sidebar-header h2 {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 24px;
+    text-align: center;
+    color: #ecf0f1;
+}
+
+.sidebar-menu {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
 
-.sidebar ul li a {
-    color: white;
+.sidebar-menu .menu-item {
+    padding: 10px 20px;
+    display: block;
+    color: #bdc3c7;
     text-decoration: none;
+    transition: all 0.3s;
+}
+
+.sidebar-menu .menu-item:hover, .sidebar-menu .menu-item:focus {
+    background: #34495e;
+    color: #ffffff;
+    text-decoration: none;
+    transform: translateX(5px);
 }
 
 .main-content {
-    margin-left: 200px; /* Sidebar의 너비와 동일하게 설정 */
+    margin-left: 250px;
     padding: 20px;
-    background: white;
-    width: calc(100% - 200px);
+    width: calc(100% - 250px);
     box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.8);
 }
 
-section {
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-h1, h2, h3, h4, h5 {
-    color: #333;
-}
