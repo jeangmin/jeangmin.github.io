@@ -42,7 +42,7 @@ body {
 }
 
 .main-content {
-    margin-left: 200px; /* 메인 컨텐츠의 왼쪽 마진을 사이드바 너비와 일치시킴 */
+    margin-left: 230px; /* 메인 컨텐츠의 왼쪽 마진을 사이드바 너비와 일치시킴 */
     padding: 20px;
     width: calc(100% - 200px);
     box-sizing: border-box;
