@@ -3,8 +3,9 @@ body {
     display: flex;
     margin: 0;
     min-height: 100vh;
-    background: url('your-background-image.jpg') no-repeat center center fixed; 
+    background: url('background.jpg') no-repeat center center fixed; /* 하늘 배경 이미지 사용 */
     background-size: cover;
+    color: #333;
 }
 
 .sidebar {
@@ -13,7 +14,7 @@ body {
     left: 0;
     top: 0;
     bottom: 0;
-    background: #2c3e50;
+    background: #2c3e50; /* 목차 배경색 유지 */
     color: #ffffff;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
@@ -38,14 +39,6 @@ body {
     display: block;
     color: #bdc3c7;
     text-decoration: none;
-    transition: all 0.3s;
-}
-
-.sidebar-menu .menu-item:hover, .sidebar-menu .menu-item:focus {
-    background: #34495e;
-    color: #ffffff;
-    text-decoration: none;
-    transform: translateX(5px);
 }
 
 .main-content {
@@ -53,6 +46,19 @@ body {
     padding: 20px;
     width: calc(100% - 250px);
     box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.8); /* 메인 컨텐츠 박스 반투명 설정 */
+    border-left: 2px solid #ccc;
 }
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3, h4, h5 {
+    color: #333;
+}
+
 
