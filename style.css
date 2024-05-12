@@ -1,15 +1,42 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    display: flex;
     margin: 0;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    margin-left: 200px; /* Sidebar의 너비와 동일하게 설정 */
+    padding: 20px;
+    background: white;
+    width: calc(100% - 200px);
+    box-sizing: border-box;
 }
 
 section {
-    background: white;
-    margin: 20px;
+    margin-bottom: 20px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -17,28 +44,4 @@ section {
 
 h1, h2, h3, h4, h5 {
     color: #333;
-}
-
-h1 {
-    color: #0056b3;
-}
-
-h2 {
-    color: #006400;
-}
-
-h3 {
-    color: #8b4513;
-}
-
-h4 {
-    color: #20b2aa;
-}
-
-h5 {
-    color: #ff6347;
-}
-
-p {
-    margin: 10px 0;
 }
