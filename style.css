@@ -9,7 +9,7 @@ body {
 }
 
 .sidebar {
-    width: 150px; /* 너비를 250px에서 200px로 줄임 */
+    width: 180px; /* 너비를 250px에서 200px로 줄임 */
     position: fixed;
     left: 0;
     top: 0;
@@ -42,12 +42,11 @@ body {
 }
 
 .main-content {
-    margin-left: 1000px; /* 메인 컨텐츠의 왼쪽 마진을 사이드바 너비와 일치시킴 */
+    margin-left: 190px; /* 메인 컨텐츠의 왼쪽 마진을 사이드바 너비와 일치시킴 */
     padding: 20px;
     width: calc(100% - 200px);
     box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.5); /* 반투명도를 조금 낮춰 더 선명하게 */
-    border-left: 3px solid #ccc; /* 왼쪽 테두리 추가 */
+    background: rgba(255, 255, 255, 0.5); /* 반투명도를 조금 낮춰 더 선명하게 *
 }
 
 section {
